@@ -61,7 +61,7 @@ export function Project({
                         alt={title}
                         width={500}
                         height={500}
-                        className="h-full w-full rounded-3xl object-cover"
+                        className="h-[400px] w-[400px] rounded-3xl object-cover"
                     />
                 </BackgroundGradient>
             </div>

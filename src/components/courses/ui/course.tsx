@@ -2,7 +2,7 @@ import { BackgroundGradient } from "~/components/ui/background-gradient";
 import { Badge } from "~/components/ui/badge";
 import Image from "next/image";
 import { WobbleCard } from "~/components/ui/wobble-card";
-import type { ProjectTimelineEntry } from "~/components/ui/timeline";
+import type { CourseTimelineEntry } from "./timeline";
 import { usePalette } from "color-thief-react";
 import {
     Accordion,
@@ -11,12 +11,12 @@ import {
     AccordionTrigger,
 } from "~/components/ui/accordion";
 
-export function Project({
+export function Course({
     tech,
     card,
     imageUrl,
     title,
-}: ProjectTimelineEntry) {
+}: CourseTimelineEntry) {
     const { data } = usePalette(imageUrl ?? "", 8, "hex");
     return (
         <div>

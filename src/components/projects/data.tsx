@@ -1,11 +1,11 @@
-import type { TimelineEntry } from "../ui/timeline";
+import type { ProjectTimelineEntry } from "./ui/timeline";
 
 export const sectionHeading = {
     title: "My projects",
     subTitle: "Here’s a look at what I’ve been working on",
 };
 
-export const timelineData: TimelineEntry[] = [
+export const timelineData: ProjectTimelineEntry[] = [
     {
         title: "host-haven",
         projectUrls: {

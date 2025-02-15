@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
-import { LinkPreview } from "./link-preview";
-import { Button } from "./button";
-import { Project } from "../projects/ui/project";
+import { LinkPreview } from "~/components/ui/link-preview";
+import { Button } from "~/components/ui/button";
+import { Project } from "./project";
 import Link from "next/link";
-import type { TimelineEntry } from "./timeline";
+import type { ProjectTimelineEntry } from "./timeline";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { IoLogoGithub } from "react-icons/io";
 
-type TimelineHeadingProps = {
-    entry: TimelineEntry;
+type ProjectTimelineHeadingProps = {
+    entry: ProjectTimelineEntry;
 };
 
-export function TimelineHeading({ entry }: TimelineHeadingProps) {
+export function ProjectTimelineHeading({ entry }: ProjectTimelineHeadingProps) {
     return (
         <div className="flex justify-start pt-10 md:gap-10 md:pt-20">
             <div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-sm">

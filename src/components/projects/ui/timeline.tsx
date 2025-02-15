@@ -1,9 +1,9 @@
 "use client";
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import { sectionHeading } from "../projects/data";
-import { SectionHeading } from "./section-heading";
-import { TimelineHeading } from "./timeline-heading";
+import { sectionHeading } from "../data";
+import { SectionHeading } from "~/components/ui/section-heading";
+import { ProjectTimelineHeading } from "./timeline-heading";
 
 type ProjectUrls = {
     site: {
@@ -22,7 +22,7 @@ type Card = {
     text: string;
 };
 
-export type TimelineEntry = {
+export type ProjectTimelineEntry = {
     title: string;
     tech: string[];
     card: Card;
@@ -30,7 +30,7 @@ export type TimelineEntry = {
     projectUrls: ProjectUrls;
 };
 
-export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
+export const ProjectTimeline = ({ data }: { data: ProjectTimelineEntry[] }) => {
     const ref = useRef<HTMLDivElement>(null);
     const containerRef = useRef<HTMLDivElement>(null);
     const [height, setHeight] = useState(0);
@@ -58,7 +58,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             />
             <div ref={ref} className="relative mx-auto max-w-7xl pb-20">
                 {data.map((item) => (
-                    <TimelineHeading key={item.title} entry={item} />
+                    <ProjectTimelineHeading key={item.title} entry={item} />
                 ))}
                 <div
                     style={{

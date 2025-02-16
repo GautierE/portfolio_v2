@@ -35,6 +35,11 @@
     --fluid-48-96: clamp(48px, 31.3043px + 5.2174vw, 96px);
     --fluid-24-40: clamp(24px, 18.4348px + 1.7391vw, 40px);
     --fluid-300-600: clamp(300px, 195.6522px + 32.6087vw, 600px);
+
+    --toastify-icon-color-info: black !important;
+    --toastify-icon-color-success: black !important;
+    --toastify-icon-color-warning: black !important;
+    --toastify-icon-color-error: black !important;
   }
 
   .dark {
@@ -181,4 +186,8 @@ body::-webkit-scrollbar-thumb:active {
 
 #markdown a:hover {
   text-decoration: none;
+}
+
+.toast-black-bar {
+  background: black !important;
 }

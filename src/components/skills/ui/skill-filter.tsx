@@ -7,7 +7,7 @@ export function SkillFilter(
         setFilter: React.Dispatch<React.SetStateAction<string | null>>
     }
 ) {
-    const filters = ["frontend", "backend", "databases", "operations"];
+    const filters = ["backend", "frontend", "databases", "operations"];
 
     return (
         <div className="flex justify-center gap-4 mt-6 flex-wrap">

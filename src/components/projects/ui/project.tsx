@@ -54,12 +54,12 @@ export function Project({
                     </Badge>
                 ))}
             </div>
-            <div className="">
-                <BackgroundGradient containerClassName="h-[400px]">
+            <div>
+                <BackgroundGradient containerClassName="h-[150px] lg:h-[420px]">
                     <Image
                         src={imageUrl}
                         alt={title}
-                        className="rounded-3xl"
+                        className="rounded-3xl object-contain xl:object-cover"
                         fill
                     />
                 </BackgroundGradient>

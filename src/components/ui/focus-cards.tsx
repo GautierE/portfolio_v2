@@ -21,7 +21,7 @@ export const FocusCard = React.memo(
             onMouseEnter={() => matchesFilter && setHovered(index)}
             onMouseLeave={() => matchesFilter && setHovered(null)}
             className={cn(
-                "rounded-full relative bg-gray-800 overflow-hidden h-60 md:h-20 w-20 transition-all duration-300 ease-out",
+                "rounded-full relative bg-gray-800 overflow-hidden h-20 w-20 transition-all duration-300 ease-out",
                 hovered !== null && hovered !== index && "blur-sm scale-[0.98]",
                 !matchesFilter && "opacity-30"
             )}
@@ -34,7 +34,7 @@ export const FocusCard = React.memo(
             />
             <div
                 className={cn(
-                    "absolute w-full inset-0 bg-black/50 flex items-center justify-center transition-opacity duration-300",
+                    "cursor-pointer absolute w-full inset-0 bg-black/50 flex items-center justify-center transition-opacity duration-300",
                     hovered === index ? "opacity-100" : "opacity-0"
                 )}
             >
@@ -58,7 +58,7 @@ export function FocusCards({ cards, filter }: { cards: FocusCard[], filter: stri
     const [hovered, setHovered] = useState<number | null>(null);
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-8 gap-10 max-w-5xl mx-auto md:px-8 w-full">
+        <div className="grid grid-cols-4 md:grid-cols-8 gap-10 max-w-5xl mx-auto md:px-8 w-full">
             {cards.map((card, index) => {
                 const matchesFilter = filter ? card.categories.includes(filter) : true;
 

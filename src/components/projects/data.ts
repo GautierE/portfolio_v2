@@ -15,9 +15,6 @@ export const timelineData: ProjectTimelineEntry[] = [
       github: {
         url: "https://github.com/GautierE/host-haven",
       },
-      details: {
-        url: "/host-haven",
-      },
     },
     imageUrl: "/images/host-haven-picture.png",
     tech: [
@@ -40,9 +37,6 @@ export const timelineData: ProjectTimelineEntry[] = [
     projectUrls: {
       site: {
         url: "https://cloudmate.gautieredel.dev/",
-      },
-      details: {
-        url: "/cloudmate",
       },
     },
     imageUrl: "/projects/cloudmate.png",
@@ -68,9 +62,6 @@ export const timelineData: ProjectTimelineEntry[] = [
       },
       github: {
         url: "https://github.com/GautierE/saas-real-estate",
-      },
-      details: {
-        url: "/saas-real-estate",
       },
     },
     imageUrl: "/projects/yanclone.png",

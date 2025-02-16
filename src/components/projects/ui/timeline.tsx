@@ -12,9 +12,6 @@ type ProjectUrls = {
     github?: {
         url: string
     },
-    details?: {
-        url: string
-    }
 };
 
 type Card = {

@@ -2,7 +2,7 @@ import { BackgroundGradient } from "~/components/ui/background-gradient";
 import { Badge } from "~/components/ui/badge";
 import Image from "next/image";
 import { WobbleCard } from "~/components/ui/wobble-card";
-import type { ProjectTimelineEntry } from "~/components/ui/timeline";
+import type { ProjectTimelineEntry } from "./timeline";
 import { usePalette } from "color-thief-react";
 import {
     Accordion,

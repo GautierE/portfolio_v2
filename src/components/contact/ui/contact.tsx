@@ -46,6 +46,7 @@ export default function Contact() {
         }
 
         setIsSending(true);
+        setFormContent({ name: "", email: "", message: "" });
 
         try {
             const response = await fetch("/api/contact", {
@@ -64,8 +65,6 @@ export default function Contact() {
         } catch (error) {
             toast.error("Something went wrong, try again please");
         }
-
-        setFormContent({ name: "", email: "", message: "" });
     };
 
     const validateEmail = (email: string): boolean => {

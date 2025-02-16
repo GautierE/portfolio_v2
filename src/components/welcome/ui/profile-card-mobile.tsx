@@ -36,7 +36,8 @@ export function ProfileCardMobile() {
                         </div>
                     </CardHeader>
                     <CardContent className="p-4">
-                        <p className="font-light">{profileCard.body}</p>
+                        <p className="font-light">{profileCard.bodyFirstPart}</p>
+                        <p className="font-light">{profileCard.bodySecondPart}</p>
                     </CardContent>
                     <CardFooter>
                         <div className="flex w-full gap-5">

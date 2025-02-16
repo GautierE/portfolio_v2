@@ -14,7 +14,7 @@ export type CourseTimelineEntry = {
     title: string;
     tech: string[];
     card: Card;
-    imageUrl: string;
+    cardColor: string;
     certificateUrl: string;
 };
 

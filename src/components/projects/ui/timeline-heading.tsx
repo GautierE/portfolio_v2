@@ -31,16 +31,22 @@ export function ProjectTimelineHeading({ entry }: ProjectTimelineHeadingProps) {
                                 <RiExternalLinkLine size={20} />
                             </Button>
                         </LinkPreview>
-                        <LinkPreview className="flex" url={entry.projectUrls.github.url}>
-                            <Button className="shadow-[2px_2px_#00000069_inset] transition-all duration-100 ease-in-out hover:translate-x-[-1px] hover:bg-white hover:shadow-[1px_1px_#00000069_inset]">
-                                <IoLogoGithub size={20} />
-                            </Button>
-                        </LinkPreview>
-                        <Link href={entry.projectUrls.details.url}>
-                            <Button className="block shadow-[2px_2px_#00000069_inset] transition-all duration-100 ease-in-out hover:translate-x-[-1px] hover:bg-white hover:shadow-[1px_1px_#00000069_inset]">
-                                More details
-                            </Button>
-                        </Link>
+                        {
+                            entry.projectUrls.github &&
+                            <LinkPreview className="flex" url={entry.projectUrls.github.url}>
+                                <Button className="shadow-[2px_2px_#00000069_inset] transition-all duration-100 ease-in-out hover:translate-x-[-1px] hover:bg-white hover:shadow-[1px_1px_#00000069_inset]">
+                                    <IoLogoGithub size={20} />
+                                </Button>
+                            </LinkPreview>
+                        }
+                        {
+                            entry.projectUrls.details &&
+                            <Link href={entry.projectUrls.details.url}>
+                                <Button className="block shadow-[2px_2px_#00000069_inset] transition-all duration-100 ease-in-out hover:translate-x-[-1px] hover:bg-white hover:shadow-[1px_1px_#00000069_inset]">
+                                    More details
+                                </Button>
+                            </Link>
+                        }
                     </div>
                 </motion.h3>
             </div>
@@ -54,16 +60,22 @@ export function ProjectTimelineHeading({ entry }: ProjectTimelineHeadingProps) {
                                 <RiExternalLinkLine size={20} />
                             </Button>
                         </Link>
-                        <Link href={entry.projectUrls.github.url} target="_blank">
-                            <Button className="shadow-[2px_2px_#00000069_inset] transition-all duration-100 ease-in-out hover:translate-x-[-1px] hover:bg-white hover:shadow-[1px_1px_#00000069_inset]">
-                                <IoLogoGithub size={20} />
-                            </Button>
-                        </Link>
-                        <Link href={entry.projectUrls.details.url}>
-                            <Button className="block shadow-[2px_2px_#00000069_inset] transition-all duration-100 ease-in-out hover:translate-x-[-1px] hover:bg-white hover:shadow-[1px_1px_#00000069_inset]">
-                                More details
-                            </Button>
-                        </Link>
+                        {
+                            entry.projectUrls.github &&
+                            <Link href={entry.projectUrls.github.url} target="_blank">
+                                <Button className="shadow-[2px_2px_#00000069_inset] transition-all duration-100 ease-in-out hover:translate-x-[-1px] hover:bg-white hover:shadow-[1px_1px_#00000069_inset]">
+                                    <IoLogoGithub size={20} />
+                                </Button>
+                            </Link>
+                        }
+                        {
+                            entry.projectUrls.details &&
+                            <Link href={entry.projectUrls.details.url}>
+                                <Button className="block shadow-[2px_2px_#00000069_inset] transition-all duration-100 ease-in-out hover:translate-x-[-1px] hover:bg-white hover:shadow-[1px_1px_#00000069_inset]">
+                                    More details
+                                </Button>
+                            </Link>
+                        }
                     </div>
                 </h3>
                 <Project {...entry} />

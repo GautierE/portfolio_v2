@@ -87,7 +87,7 @@ export default function Contact() {
                         Send me a message !
                     </motion.h2>
                     <motion.p
-                        className="sm:text-xl md:text-2xl"
+                        className="text-muted-foreground sm:text-xl md:text-2xl"
                         custom={{ delay: 0.5 }}
                         variants={animateText}
                         initial="hidden"

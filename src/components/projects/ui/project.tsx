@@ -55,13 +55,12 @@ export function Project({
                 ))}
             </div>
             <div className="">
-                <BackgroundGradient containerClassName="max-h-[400px]">
+                <BackgroundGradient containerClassName="h-[400px]">
                     <Image
                         src={imageUrl}
                         alt={title}
-                        width={500}
-                        height={500}
-                        className="h-[400px] w-[400px] rounded-3xl object-cover"
+                        className="rounded-3xl"
+                        fill
                     />
                 </BackgroundGradient>
             </div>

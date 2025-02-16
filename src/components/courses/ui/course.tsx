@@ -14,20 +14,18 @@ import {
 export function Course({
     tech,
     card,
-    imageUrl,
-    title,
+    cardColor
 }: CourseTimelineEntry) {
-    const { data } = usePalette(imageUrl ?? "", 8, "hex");
     return (
         <div>
             <WobbleCard
-                style={{ backgroundColor: data?.[7] ?? "#235147" }}
+                style={{ backgroundColor: cardColor }}
                 containerClassName="col-span-2 hidden lg:block"
                 className="py-2 xl:py-5"
             >
                 <h2
                     style={{
-                        color: data?.[7] ?? "#235147",
+                        color: "#ffffff",
                         filter: "brightness(0.8)",
                     }}
                     className="text-balance text-left text-base font-bold tracking-[-0.015em] md:text-xl lg:text-3xl"
@@ -53,17 +51,6 @@ export function Course({
                         {text}
                     </Badge>
                 ))}
-            </div>
-            <div className="">
-                <BackgroundGradient containerClassName="max-h-[400px]">
-                    <Image
-                        src={imageUrl}
-                        alt={title}
-                        width={500}
-                        height={500}
-                        className="h-[400px] w-[400px] rounded-3xl object-cover"
-                    />
-                </BackgroundGradient>
             </div>
         </div>
     );

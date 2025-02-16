@@ -7,37 +7,36 @@ export const sectionHeading = {
 
 export const timelineData: CourseTimelineEntry[] = [
     {
-        title: "host-haven",
-        certificateUrl: "https://google.com",
-        imageUrl: "/images/host-haven-picture.png",
+        title: "Docker Mastery",
+        certificateUrl: "https://www.udemy.com/certificate/UC-3ef0ee79-14b7-4383-8b49-592b95cd286c/",
+        cardColor: "",
         tech: [
-            "TypeScript",
-            "NestJS",
-            "Express.js",
+            "Docker",
+            "Docker Swarm",
             "Kubernetes",
-            "Microservices architecture",
-            "...",
+            "Github Actions",
         ],
         card: {
-            title: "Airbnb like API",
-            text: "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul",
+            title: "Devops course from a Docker Captain",
+            text: "A 20-hour course on building, testing, and deploying containers, including Kubernetes and CI/CD pipelines.",
         },
     },
     {
-        title: "host-haven",
-        certificateUrl: "https://google.com",
-        imageUrl: "/images/host-haven-picture.png",
+        title: "NestJS",
+        certificateUrl: "https://www.udemy.com/certificate/UC-3ef0ee79-14b7-4383-8b49-592b95cd286c/",
+        cardColor: "#8E518D",
         tech: [
             "TypeScript",
             "NestJS",
-            "Express.js",
+            "RabbitMQ",
+            "gRPC",
+            "Docker",
             "Kubernetes",
-            "Microservices architecture",
-            "...",
+            "AWS",
         ],
         card: {
-            title: "Airbnb like API",
-            text: "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul",
+            title: "Build a production grade NestJS backend",
+            text: "A 10-hour course teaching best practices for building & deploying a NestJS microservices backend.",
         },
     }
 ];

@@ -9,10 +9,10 @@ type ProjectUrls = {
     site: {
         url: string;
     },
-    github: {
+    github?: {
         url: string
     },
-    details: {
+    details?: {
         url: string
     }
 };

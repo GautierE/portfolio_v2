@@ -42,7 +42,8 @@ export function ProfileCard() {
                                     </div>
                                 </CardHeader>
                                 <CardContent className="p-4">
-                                    <p>{profileCard.body}</p>
+                                    <p>{profileCard.bodyFirstPart}</p>
+                                    <p>{profileCard.bodySecondPart}</p>
                                 </CardContent>
                             </Card>
                         </CardItem>
